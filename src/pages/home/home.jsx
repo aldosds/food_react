@@ -1,4 +1,5 @@
-import Navbar from "../../components/navbar/navebar";
+import Navbar from "../../components/navbar/navebar.jsx";
+import ProdutoVitrine from "../../components/produto-vitrine/produto-vitrine.jsx";
 
 function Home() {
     return <>
@@ -11,6 +12,14 @@ function Home() {
                 Clique em adicionar para colocar os produtos na sacola de compras. Se preferir, você pode pedir pelo WhatsApp: (11) 94785-2140
                 </p>
             </div>
+        </div>
+
+        <div className="text-center">
+            <ProdutoVitrine/>
+            <ProdutoVitrine/>
+            <ProdutoVitrine/>
+            <ProdutoVitrine/>
+            <ProdutoVitrine/>
         </div>
     </>
 }
