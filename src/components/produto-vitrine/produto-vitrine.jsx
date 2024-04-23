@@ -8,8 +8,8 @@ function ProdutoVitrine() {
 
         <div>
             <h2>Spicy Burguer</h2>
-            <p className="prod-vitrine-deccricao">Hamburguer de 250g, queijo, tomate. alface e cebola</p>
-            <p className="prod-vitrine-preco">R$ 18,90</p>
+            <p className="prod-vitrine-descricao">Hamburguer de 250g, queijo, tomate. alface e cebol</p>
+            <p aclassName="prod-vitrine-preco">R$ 18,90</p>
         </div>
 
         <div>
