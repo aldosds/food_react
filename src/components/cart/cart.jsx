@@ -2,16 +2,22 @@ import { useEffect, useState } from "react"
 import { Dock } from "react-dock"
 import ProdutoCart from "../produto-cart/produto-cart";
 import "./cart.css"
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
 
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(function() {
         window.addEventListener('openSidebar', function() {
             setShow(true);
         });
     }, []);
+
+    function checkout() {
+        navigate('/checkout')
+    }
 
     return <Dock position="right"
                  isVisible={show}
@@ -36,7 +42,7 @@ function Cart() {
                 <span><strong>R$ 250,00</strong></span>
             </div>
             <div>
-                <button className="btn-checkout">Finalizar Pedido</button>
+                <button onClick={checkout} className="btn-checkout">Finalizar Pedido</button>
             </div>
         </div>
     </Dock>
